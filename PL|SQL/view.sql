@@ -395,3 +395,41 @@ WHERE j.job_title LIKE '%Manager%'
 GROUP BY d.department_name
 HAVING COUNT(*) > 1;
 
+--
+
+CREATE TABLE funcionarios AS
+SELECT * FROM hr.employees;
+
+
+CREATE OR REPLACE VIEW vw_funcionarios AS
+SELECT 
+    employee_id,
+    first_name,
+    salary
+FROM funcionarios;
+
+UPDATE vw_funcionarios
+   SET salary = salary + 500
+ WHERE employee_id = 100;
+
+SELECT employee_id, salary 
+FROM funcionarios
+WHERE employee_id = 100;
+
+--
+CREATE OR REPLACE VIEW View_Funcionarios_Alto_Salario AS
+SELECT 
+    employee_id,
+    first_name,
+    salary
+FROM funcionarios
+WHERE salary > 5000;
+
+UPDATE View_Funcionarios_Alto_Salario
+   SET salary = salary + 1000
+ WHERE employee_id = 101;
+
+SELECT employee_id, salary 
+FROM funcionarios
+WHERE employee_id = 101;
+
