@@ -5,8 +5,19 @@ Tive a honra de estudar Banco de Dados com a professora Dra. Daniela Sbizera Jus
 
 Este repositório é dedicado ao estudo e à prática de Banco de Dados, reunindo códigos e exemplos que demonstram o que aprendi ao longo da minha trajetória.
 
-## Arquivos
+## Temas
 
 - **PL/SQL**: Functions, Procedures, Packages, Triggers, Views e blocos anônimos para manipulação de dados.  
 - **DML e DQL**: Comandos de manipulação e consulta de dados.  
 - **JSON**: Estruturação e integração de dados em formato JSON.
+
+----
+
+Cada pasta possui um README.md
+## Pastas
+
+- **JSON**
+- **MongoDB**
+- **MySql**
+- **OracleSQL**
+- **PL/SQL**
