@@ -1,0 +1,44 @@
+{
+    "Usuario": {
+      "despesa": {
+        " anexo": {
+          "caminho": "",
+          "idAnexo": ""
+        },
+        "Notificacao": {
+          "diasAntes ": 0,
+          "idNotificacao ": ""
+        },
+        "Parcelado": {
+          "diaInicial ": "",
+          "idParcelado": "",
+          "quantidadeParcelas ": ""
+        },
+        "Recorrente": {
+          "diaInicial ": "",
+          "idRecorrente": "",
+          "mensalAnual ": 0
+        },
+        "Unico": {
+          "dataVencimento ": "",
+          "idUnico": ""
+        },
+        "descricao": "",
+        "diasRestante ": "",
+        "idDespesa": "",
+        "localizacao": {
+          "bairro ": "",
+          "cidade ": "",
+          "endereco ": "",
+          "idLocalizacao": ""
+        },
+        "nome ": "",
+        "status": "",
+        "valor ": ""
+      },
+      "email": "",
+      "idUser": "",
+      "senha": ""
+    }
+  }
+  
