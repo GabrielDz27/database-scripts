@@ -13,15 +13,15 @@ Este repositório é dedicado ao estudo e à prática de Banco de Dados, reunind
 
 ----
 
-Cada pasta possui um README.md
 ## Pastas
+
+Cada pasta possui um README.md
 
 - **JSON**
 - **MongoDB**
 - **MySql**
 - **OracleSQL**
 - **PL/SQL**
-
 
 
 Obs.: futuramente na pasta MongoDB tera um dockercompose, onde a pessoa pode rodar, conectar no banco e testar algumas cosinhas.

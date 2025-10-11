@@ -3,14 +3,14 @@ SELECT DBMS_RANDOM.NORMAL FROM DUAL;
 DECLARE 
 	VL_NUMERO_AL NUMBER; 
 BEGIN 
-     SELECT DBMS_RANDOM.NORMAL INTO VL_NUMERO_AL FROM DUAL;
+   SELECT DBMS_RANDOM.NORMAL INTO VL_NUMERO_AL FROM DUAL;
 	IF VL_NUMERO_AL = 0 THEN
 		DBMS_OUTPUT.PUT_LINE('VALOR E ZERO : ' || VL_NUMERO_AL);
-    ELSIF VL_NUMERO_AL > 0 THEN
+   ELSIF VL_NUMERO_AL > 0 THEN
 		DBMS_OUTPUT.PUT_LINE('MAIOR QUE ZERO : ' || VL_NUMERO_AL);
-    ELSE 
+   ELSE 
 		DBMS_OUTPUT.PUT_LINE('MENOR QUE ZERO : ' || VL_NUMERO_AL);
-    END IF;
+   END IF;
 END;
 
 --
@@ -19,8 +19,8 @@ DECLARE /*AUMENTA*/
 	CURSOR C_EMPLOYEES IS SELECT * FROM EMPLOYEES;
 	V_EMPLOYEES EMPLOYEES%ROWTYPE;
 BEGIN
-    UPDATE	EMPLOYEES 
-    SET SALARY = SALARY * VL;
+   UPDATE	EMPLOYEES 
+   SET SALARY = SALARY * VL;
 
 	FOR V_EMPLOYEES IN C_EMPLOYEES LOOP
         UPDATE	EMPLOYEES 
@@ -74,18 +74,18 @@ DECLARE /*minimo, maximo, medio*/
     END;
 
 	PROCEDURE valorMaximo(x IN number, y IN number, z OUT number) IS
-    BEGIN
-       IF x > y THEN
-          z:= x;
-       ELSE
-          z:= y;
-       END IF;
-    END;
+   BEGIN
+      IF x > y THEN
+         z:= x;
+      ELSE
+         z:= y;
+      END IF;
+   END;
 
 	PROCEDURE valorMedio(x IN number, y IN number, z OUT number) IS
-    BEGIN
-       z := (x+y)/2;
-    END;
+   BEGIN
+      z := (x+y)/2;
+   END;
 
 BEGIN
    a:= 23;
