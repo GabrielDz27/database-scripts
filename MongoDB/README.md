@@ -7,3 +7,23 @@ Neste pasta eu disponibilizo scripts e exemplos para manipular coleções MongoD
 ### Pré-requisitos
 - Docker instalado.
 - (Opcional) mongo.
+
+### Como iniciar
+
+1. **Subir o container:**
+   ```bash
+   docker-compose up -d
+
+2. **Conferir container mongodb-local está rodando:**
+   ```bash
+   docker ps
+
+### Comandos úteis
+
+1. **Parar o container:**
+   ```bash
+   docker-compose stop
+
+2. **Limpar tudo:**
+    ```bash
+    docker-compose down -v
