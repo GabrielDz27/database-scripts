@@ -23,5 +23,5 @@ Cada pasta possui um README.md
 - **OracleSQL**
 - **PL/SQL**
 
-    
-Obs.: futuramente na pasta MongoDB tera um dockercompose, onde a pessoa pode rodar, conectar no banco e testar algumas cosinhas.
+## Obs.: 
+A pasta MongoDB possui um docker-compose, onde é possível rodar, conectar no banco e testar comandos básicos do MongoDB
